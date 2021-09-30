@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Sacramento&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* navbar */
+
+.navbar{
+    background-color: #14279B;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+
+.logo h3{
+    font-family: 'Sacramento', cursive;
+    font-weight: bolder;
+    color: white;
+    margin: 0.75rem;
+}
+
+.navbar-links ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-links ul li{
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.navbar-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+    padding: 0.5em;
+    display: block;
+}
+.navbar-links ul li a:hover{
+    color: grey;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/* home */
+
+
+.home{
+    background:linear-gradient(to right, rgba(45, 145, 233, 0.8), rgba(39, 134, 218, 0.8)), url("homebackground.svg") center;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+
+
+
+/* media */
+
+
+
+@media (max-width: 735px){
+    .home{
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 500px){
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .navbar-links ul{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar-links li{
+        padding: 0.5rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+}
