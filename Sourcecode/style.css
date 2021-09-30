@@ -13,7 +13,7 @@
     background-color: #14279B;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: sticky;
     top: 0;
 }
@@ -39,9 +39,10 @@
 .navbar-links ul li a{
     text-decoration: none;
     color: white;
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 0.5em;
     display: block;
+    font-weight: 800;
 }
 .navbar-links ul li a:hover{
     color: grey;
@@ -89,6 +90,9 @@
 
 
 @media (max-width: 735px){
+    .navbar{
+        justify-content: center;
+    }
     .home{
         text-align: center;
     }
@@ -96,7 +100,7 @@
 
 
 
-@media (max-width: 500px){
+@media (max-width: 550px){
     .toggle-button {
         display: flex;
     }
