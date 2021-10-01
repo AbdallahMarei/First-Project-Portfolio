@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.infobar{
+    background-color: black;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Lato", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 1vw;
+}
+.phones i{
+    color: orange;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    font-size: 1.3em;
+}
+.icons i{
+    padding-right: 0.3em;
+    padding-left: 0.3em;
+    font-size: 1.3em;
+}
+.navbar{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5em;
+    padding-bottom: 1em;
+    font-size: 1vw;
+}
+.image{
+    margin-left: 1em;
+}
+.image img{
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+.navbar-links{
+    display: flex;
+}
+.navbar-links ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar-links ul li{
+    list-style: none;
+}
+.navbar-links ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    padding-bottom: 1.7em;
+}
+.navbar-links ul li a:hover{
+    color: orange;
+    border-bottom: 0.2em orange solid;
+}
+.navbar-links i{
+    margin-left: 1em;
+    font-size: 1.2em;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    
+}
+.navbar-links a:hover{
+    color: orange;
+  
+}
+.booking-btn button{
+    background-color: orange;
+    padding: 1em;
+    margin-right: 2em;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    font-size: 1.1em;
+    border: orange;
+    border-radius: 3em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.booking-btn button:hover{
+    background-color: blue;
+}
+.home{
+    background: url("hawaii.jpg") center;
+    height: 220vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    flex: 50%;
+    font-size: 1vw;
+    padding: 9em;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    
+}
+.left i{
+    color: orange;
+    font-size: 2em;
+}
+.left h3{
+    font-size: 3em;
+    padding-bottom: 1em;
+}
+.left p{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    font-size: 1.5em;
+}
+.left .learn-more{
+    background-color:transparent;
+    padding: 1em;
+    margin-right: 2em;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    font-size: 1.1em;
+    border:white solid;
+    border-radius: 3em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.learn-more p{
+    margin: 0;
+    padding: 0;
+}
+.learn-more:hover{
+    background-color: orange;
+    border: 0;
+}
+.right{
+    flex: 50%;
+}
+fieldset{
+    background-color: white;
+    opacity: 0.85;
+    padding: 3em;
+    margin-right: 3em;
+    border: 0;
+    border-radius: 1em;
+    margin-top: 3em;
+}
+input{
+    background-color: rgb(223, 213, 213);
+    padding: 1em;
+    border: white;
+    border-radius: 1em;
+    width: 90%;
+    margin: 1em;
+    margin-left: 0;
+}
+select{
+    background-color: rgb(223, 213, 213);
+    padding: 1em;
+    width: 100%;
+    border: white;
+    border-radius: 1em;
+    margin: 1em;
+    margin-left: 0;
+}
+fieldset h4{
+    padding-bottom: 1em;
+}
+.search-btn{
+    background-color: orange;
+    padding: 1em;
+    margin-right: 2em;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    font-size: 1.1em;
+    border: orange;
+    border-radius: 3em;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 1em;
+}
+.search-btn:hover{
+    background-color: blue;
+}
+form{
+    width: 100%;
+    font-size: 1.5vw;
+    margin-bottom: 1em;
+}
+.insideform{
+    display: flex;
+}
+.insideform1{
+    flex: 50%;
+    width: 50%;
+}
+.insideform2{
+    flex: 50%;
+    width: 50%;
+}
+.children{
+    width: 100%;
+}
+.toggle-button{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.card{
+    width: 100% !important;
+    margin-bottom: 2vh;
+    border: 0 !important;
+}
+.card-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-body p{
+    padding: 0;
+    margin: 0;
+}
+.card-body h5{
+    padding: 0;
+    margin: 0;
+}
+.row{
+    padding-bottom: 2em;   
+}
+.card-img-top{
+    width: 100%;
+}
+section{
+    width: 100vw;
+    font-size: 1vw;
+}
+section .heading{
+    position: relative;
+}
+section h2{
+    width: 90%;
+    font-size: 9em;
+    margin: 0.5em auto;
+    color: #F7F7F7;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2em;
+    /* top: 2.7em;
+    left: 6.8em; */
+}
+section h3{
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    top: 40%;
+    left: 15%;
+}
+@media screen and (max-width:1080px) {
+    .infobar{
+        display:none
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-links {
+        font-size: 1.8em;
+    }
+    .navbar-links a:hover{
+        border: 0;
+    }
+    .home{
+        flex-direction: column;
+        height: 300vh;
+        align-items: center;
+        text-align: center;
+        justify-content: center;font-size: 1vw;
+    }
+    form{
+        text-align: left;
+
+    }
+    .booking-btn button{
+        margin-top: 1em;
+        margin-left: 3em;
+        font-size: 1.3em;
+    }
+    .navbar-links{
+        padding: 0;
+        margin-top: 1em;
+    }
+    .navbar-links i{
+        display: none;
+    }
+    fieldset{
+        margin: 0;
+    }
+    .learn-more{
+        margin: 0;
+        margin-left: 1.5em;
+    }
+    .left p{
+        font-size: 3em;
+    }
+    .left h3{
+        font-size: 5em;
+    }
+    .left i{
+        font-size: 4em;
+    }
+}
+@media screen and (max-width: 600px) {
+   
+    .booking-btn button{
+        display: none;
+    }
+    .home{
+        font-size: 0.5em;
+    }
+    form{
+        font-size: 1.5em;
+        margin-bottom: 10em;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 12vh;
+    }
+    .navbar-links ul{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar-links li{
+        padding: 0.5rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+    .left p{
+        font-size: 3em;
+    }
+    fieldset{
+        margin: 0;
+    }
+    .insideform{
+        flex-direction: column;
+        
+    }
+    .insideform1{
+        width: 100%;
+    }
+    .insideform2{
+        width: 100%;
+    }
+    .insideform1 input{
+        width: 100%;
+    }
+    .learn-more p{
+        font-size: 2em;
+    }
+    .learn-more{
+        margin: 0;
+        margin-left: 2em;
+    }
+    .left h3{
+        font-size: 5em;
+    }
+    section .heading h2, h3{
+        display: none;
+    }
+    .container{
+        margin-top: 10%;
+    }
+}

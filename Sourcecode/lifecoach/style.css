@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    background-color: rgb(214, 206, 206);
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.1vw;
+    min-height: 15vh;
+}
+.navbar-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar-links ul{
+    display: flex;
+    
+}
+.navbar-links ul li{
+    list-style: none;
+}
+.navbar-links ul li a{
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+}
+.navbar-links a:hover{
+    color: rgb(104, 151, 167);
+}
+.navbar-links i{
+    padding-left: 1em;
+    padding-right: 0.5em;
+    color: #371F81;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: #371F81;
+}
+.navbar-links a:hover{
+    color: lightblue;
+}
+.brand{
+    text-align: center;
+}
+.brand h3{
+    margin: 0.5em 0;
+}
+
+
+/* navbar */
+
+
+/* Home */
+
+.home{
+    background: url("mountain.jpg") center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1vw;
+}
+.home h4{
+    font-size: 1.5em;
+}
+.home h1{
+    font-size: 9em;
+}
+.home h3{
+    font-size: 2em;
+}
+.book-now{
+    background-color: black;
+    color: white;
+    padding: 1em 1.5em;
+    margin-top: 1.5em;
+    font-size: 1em;
+    transition: 0.5s;
+    border: black solid 0.2em;
+    
+}
+.book-now:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* hamburger menu */
+
+
+.toggle-button{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+
+/* media */
+
+
+@media screen and (max-width:950px){
+    .home, .navbar{
+        font-size: 1.5vw;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width:700px){
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar-links li{
+        padding: 0.5rem;
+        font-size: 2.5em;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+    .brand{
+        font-size: 2em;
+    }
+    .navbar-links .icon{
+        display: none;
+    }
+   
+}

@@ -5,17 +5,28 @@
     padding: 0;
 }
 
-
+hr{
+   width: 5%; 
+   margin: 0 auto;
+   border-width: 0.5em;
+   border-radius: 2em;
+   background-color: #0062B9;
+   margin-bottom: 2%;
+}
 
 /* navbar */
 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 .navbar{
     background-color: #14279B;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
+  
 }
 
 .logo h3{
@@ -24,6 +35,7 @@
     color: white;
     margin: 0.75rem;
 }
+
 
 .navbar-links ul{
     display: flex;
@@ -78,10 +90,138 @@
     justify-content: center;
     align-items: center;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* services */
+
+
+.services h2{
+    text-align: center;
+    margin-top: 3%;
+}
+.services .card-deck{
+    margin: 5%;
+}
+.services img{
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+}
+.services h5{ 
+    text-align: center;
 }
 
 
 
+/* qualifications */
+
+.qualifications{
+    background-color: #3D56B2;
+    color: white;
+}
+.qualifications h2{
+    text-align: center;
+    padding-top: 3%;
+    color: white;
+}
+.qualifications hr{
+    background: rgb(255, 255, 255);
+    margin-bottom: 2%;
+}
+.qualifications .table{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 80%;
+    margin: 0 auto;
+    gap: 1em;
+    font-size: 1.3em;
+    padding-bottom: 4%;
+}
+
+
+/* projects */
+
+.projects{
+   padding-bottom: 10%;
+}
+.projects h2{
+    text-align: center;
+    padding-top: 3%;
+}
+.projects h4{
+    text-align: center;
+    margin: 2%;
+}
+
+
+
+
+/* testimonials */
+
+.testimonials{
+    background-color: #5C7AEA;
+    color: white;
+}
+.testimonials hr{
+    background-color: white;
+}
+.testimonials h2{
+    text-align: center;
+    padding-top: 3%;
+}
+.testimonials h4{
+    text-align: center;
+}
+.testimonials-container{
+    display: grid;
+    margin: 3%;
+    gap: 2em;
+    grid-template-columns: repeat(3,1fr);
+    padding-bottom: 5%;
+    margin-bottom: 0;
+}
+.testimonials-container div{
+    border: 5px solid white;
+    padding: 4%;
+    border-radius: 20%;
+   
+}
+.testimonials-container div p{
+    text-align: center;
+}
+
+
+
+/* contactme */
+
+.contactme{
+    background-color: #E6E6E6;
+}
+.contactme h2{
+    text-align: center;
+    padding-top: 3%;
+}
+.contactme h4{
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+}
+.contactme-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+.contactme form{
+    width: 50%;
+}
+.contactme .contact-info p:nth-child(1){
+    font-size: 2em;
+}
 
 
 
@@ -89,18 +229,33 @@
 
 
 
-@media (max-width: 735px){
+@media (max-width: 800px){
     .navbar{
         justify-content: center;
     }
     .home{
         text-align: center;
     }
+    .testimonials-container{
+        grid-template-columns: 1fr;
+    }
+    .contactme-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactme-container form{
+        padding: auto;
+        width: 100%;
+    }
+    .contactme-container .contact-info{
+        align-self:baseline;
+        padding-top: 3em;
+    }
 }
 
 
 
-@media (max-width: 550px){
+@media (max-width: 610px){
     .toggle-button {
         display: flex;
     }
@@ -123,5 +278,21 @@
     }
     .navbar-links.active{
         display: flex;
+    }
+    .home h1{
+        font-size: 1.8em;
+    }
+    .home p{
+        margin: 2% 5%;
+    }
+    .qualifications .table{
+        grid-template-columns: 1fr;
+    }
+    .qualifications .table h3{
+        text-align: center;
+    }
+    h4{
+        font-size: 1em;
+        padding-bottom: 5%;
     }
 }
