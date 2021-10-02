@@ -102,7 +102,7 @@ header{
 
 /* about */
 .about{
-     text-align: center;
+    text-align: center;
     margin-top: 3%;
 }
 .about-container{
@@ -173,8 +173,8 @@ header{
     grid-template-columns: repeat(2,1fr);
     width: 80%;
     margin: 0 auto;
+    font-size: 1.4em;
     gap: 1em;
-    font-size: 1.3em;
     padding-bottom: 4%;
 }
 
@@ -312,8 +312,14 @@ footer p{
 
 
 @media (max-width: 870px){
+    body{
+        font-size: 1.3rem;
+    }
     .navbar{
         justify-content: center;
+    }
+    .navbar-links ul li a{
+        font-size: 1rem;
     }
     .home{
         text-align: center;
@@ -359,6 +365,9 @@ footer p{
 
 
 @media (max-width: 600px){
+    body{
+        font-size: 1.1rem;
+    }
     .toggle-button {
         display: flex;
     }
@@ -390,6 +399,7 @@ footer p{
     }
     .qualifications .table{
         grid-template-columns: 1fr;
+        font-size: 1rem;
     }
     .qualifications .table h3{
         text-align: center;
