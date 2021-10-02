@@ -98,6 +98,37 @@ header{
 }
 
 
+/* about */
+.about{
+     text-align: center;
+    margin-top: 3%;
+}
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.description{
+    flex: 30%;
+    text-align: left;
+    margin-left: 4%;
+    font-size: 1vw;
+
+}
+.description p{
+    font-size: 1.4em;
+}
+.profile-picture{
+    flex: 40%;
+}
+.profile-picture img{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+
+
 /* services */
 
 
@@ -132,7 +163,7 @@ header{
 }
 .qualifications hr{
     background: rgb(255, 255, 255);
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 .qualifications .table{
     color: white;
@@ -166,7 +197,7 @@ header{
 /* testimonials */
 
 .testimonials{
-    background-color: #5C7AEA;
+    background-color: #3D56B2;
     color: white;
     text-align: center;
 }
@@ -306,6 +337,21 @@ footer p{
      }
      .navbar-links-footer ul li a{
      }
+     .about-container{
+         flex-direction: column-reverse;
+     }
+     .profile-picture{
+         margin: 5%;
+     }
+     .description{
+         text-align: center;
+         font-size: 0.8em;
+         margin-bottom: 5%;
+     }
+     .description p{
+         margin: 5%;
+     }
+     
 }
 
 
