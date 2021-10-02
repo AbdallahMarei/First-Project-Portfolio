@@ -126,7 +126,7 @@ header{
 .profile-picture img{
     width: 100%;
     height: auto;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 
@@ -286,7 +286,7 @@ footer{
 .navbar-links-footer ul li a{
     text-decoration: none;
     color: white;
-    padding: 2em;
+    padding: 1em;
     
 }
 .navbar-links-footer ul li a:hover{
@@ -358,7 +358,7 @@ footer p{
 
 
 
-@media (max-width: 610px){
+@media (max-width: 600px){
     .toggle-button {
         display: flex;
     }
