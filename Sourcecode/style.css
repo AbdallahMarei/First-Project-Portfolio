@@ -359,6 +359,9 @@ footer p{
      .description p{
          margin: 5%;
      }
+     .qualifications .table{
+         font-size: 1.3rem;
+     }
      
 }
 
@@ -366,7 +369,7 @@ footer p{
 
 @media (max-width: 600px){
     body{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .toggle-button {
         display: flex;
@@ -396,6 +399,9 @@ footer p{
     }
     .home p{
         margin: 2% 5%;
+    }
+    .description p{
+        font-size: 1.1rem;
     }
     .qualifications .table{
         grid-template-columns: 1fr;
