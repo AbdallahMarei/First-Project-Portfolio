@@ -6,6 +6,9 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 hr{
    width: 5%; 
@@ -99,6 +102,9 @@ header{
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
+.home h1{
+    font-family: 'Sacramento', cursive;;
+}
 
 
 /* about */
@@ -160,8 +166,10 @@ header{
 /* qualifications */
 
 .qualifications{
-    background-color: #3D56B2;
     color: white;
+    background: url("images/blue-back.png") center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .qualifications h2{
     text-align: center;
@@ -230,10 +238,13 @@ header{
     margin-bottom: 0;
 }
 .testimonials-container div{
-    border: 2px solid white;
+    border: 1px solid white;
     padding: 4%;
-    border-radius: 10%;
-   
+    border-radius: 10%; 
+    transition: 0.5s;
+}
+.testimonials-container div:hover{
+    background-color: #007bff;
 }
 .testimonials-container div p{
     text-align: center;
@@ -261,9 +272,9 @@ header{
 }
 .contactme-container{
     display: flex;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 3%;
     padding-bottom: 3em;
 }
@@ -272,6 +283,9 @@ header{
 }
 .contactme .contact-info p:nth-child(1){
     font-size: 2em;
+}
+.contactme .contact-info{
+    padding-top: 1.5em;
 }
 
 
@@ -320,7 +334,7 @@ footer p{
 
 
 
-@media (max-width: 770px){
+@media (max-width: 840px){
     body{
         font-size: 1.3rem;
     }
