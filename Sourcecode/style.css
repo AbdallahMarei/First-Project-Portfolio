@@ -56,14 +56,14 @@ header{
 
 .navbar-links ul li a{
     text-decoration: none;
-    color: white;
+    color: rgb(224, 224, 224);
     font-size: 1em;
     padding: 0.5em;
     display: block;
     font-weight: 800;
 }
 .navbar-links ul li a:hover{
-    color: grey;
+    color: white;
 }
 
 .toggle-button{
@@ -285,20 +285,23 @@ footer{
 }
 .navbar-links-footer ul li a{
     text-decoration: none;
-    color: white;
+    color: rgb(224, 224, 224);
     padding: 1em;
     
 }
 .navbar-links-footer ul li a:hover{
-    color: grey;
+    color: white;
 }
 footer .icons{
     text-align: center;
 }
 footer .icons a{
     text-decoration: none;
-    color: white;
+    color: rgb(224, 224, 224);
     padding: 0.8em;
+}
+footer .icons a:hover{
+    color: whitesmoke;
 }
 footer p{
     color: white;
@@ -311,7 +314,7 @@ footer p{
 
 
 
-@media (max-width: 870px){
+@media (max-width: 860px){
     body{
         font-size: 1.3rem;
     }
@@ -320,6 +323,7 @@ footer p{
     }
     .navbar-links ul li a{
         font-size: 1rem;
+        padding: 0.2em;
     }
     .home{
         text-align: center;
@@ -367,7 +371,7 @@ footer p{
 
 
 
-@media (max-width: 600px){
+@media (max-width: 550px){
     body{
         font-size: 1rem;
     }
