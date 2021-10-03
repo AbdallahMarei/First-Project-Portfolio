@@ -64,6 +64,7 @@ header{
 }
 .navbar-links ul li a:hover{
     color: white;
+    transform: scale(1.2);
 }
 
 .toggle-button{
@@ -295,6 +296,7 @@ footer{
 }
 .navbar-links-footer ul li a:hover{
     color: white;
+    transform: scale(1.2);
 }
 footer .icons{
     text-align: center;
