@@ -256,9 +256,9 @@ header{
 }
 .contactme-container{
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 3%;
     padding-bottom: 3em;
 }
@@ -314,7 +314,7 @@ footer p{
 
 
 
-@media (max-width: 860px){
+@media (max-width: 770px){
     body{
         font-size: 1.3rem;
     }
