@@ -171,7 +171,6 @@ header{
     transition: ease-in-out 0.3s;
 }
 .services-container div:hover{
-    /* background: linear-gradient(to right, rgba(45, 145, 233, 0.8), rgba(42, 113, 175, 0.8)); */
     background-color: #E6E6E6;
     transform: translateY(-10px);
 }
@@ -352,8 +351,9 @@ footer .icons a{
     color: rgb(224, 224, 224);
     padding: 0.8em;
 }
-footer .icons a:hover{
+footer .icons a:hover i{
     color: whitesmoke;
+    transform: scale(1.5);
 }
 footer p{
     color: white;
@@ -361,6 +361,7 @@ footer p{
     margin: 0;
     padding: 1em;
 }
+
 
 /* media */
 
