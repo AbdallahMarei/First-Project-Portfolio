@@ -212,7 +212,7 @@ header{
 /* testimonials */
 
 .testimonials{
-    background-color: #3D56B2;
+    background-color: #5C7AEA;
     color: white;
     text-align: center;
 }
@@ -238,7 +238,7 @@ header{
     margin-bottom: 0;
 }
 .testimonials-container div{
-    border: 1px solid #3D56B2;
+    border: 1px solid #5C7AEA;
     padding: 4%;
     border-radius: 10%; 
     transition: 0.5s;
