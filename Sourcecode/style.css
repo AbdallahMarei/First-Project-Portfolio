@@ -231,7 +231,7 @@ header{
     text-align: center;
     padding-top: 3%;
 }
-.projects h4{
+.projects h3{
     text-align: center;
     margin: 2%;
 }
@@ -253,7 +253,7 @@ header{
     text-align: center;
     padding-top: 3%;
 }
-.testimonials h4{
+.testimonials h3{
     text-align: center;
 }
 .testimonials blockquote{
@@ -296,10 +296,11 @@ header{
     text-align: center;
     padding-top: 3%;
 }
-.contactme h4{
+.contactme h3{
     text-align: center;
     margin: 0 auto;
     width: 70%;
+    font-size: 1.3em;
 }
 .contactme-container{
     display: flex;
@@ -361,6 +362,7 @@ footer p{
     margin: 0;
     padding: 1em;
 }
+
 
 
 /* media */
@@ -445,7 +447,9 @@ footer p{
      .services-container{
          flex-direction: column;
      }
-     
+     .contactme h3{
+         font-size: 1em;
+     }
 }
 
 
