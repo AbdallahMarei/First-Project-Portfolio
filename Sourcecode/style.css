@@ -448,7 +448,7 @@ footer p{
          flex-direction: column;
      }
      .contactme h3{
-         font-size: 1em;
+         font-size: 0.8em;
      }
      .projects h3{
          font-size: 1em;
@@ -512,6 +512,9 @@ footer p{
     }
     .testimonials h3{
         font-size: 1em;
+    }
+    .contactme h3{
+        font-size: 0.8em;
     }
     
 }
