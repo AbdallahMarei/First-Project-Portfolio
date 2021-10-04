@@ -184,7 +184,7 @@ header{
     margin: 2%;
     margin-bottom: 0;
 } */
-.services h5{ 
+.services h3{ 
     text-align: center;
 }
 .services p{
@@ -450,6 +450,12 @@ footer p{
      .contactme h3{
          font-size: 1em;
      }
+     .projects h3{
+         font-size: 1em;
+     }
+     .testimonials h3{
+         font-size: 1em;
+     }
 }
 
 
@@ -500,6 +506,12 @@ footer p{
     h4{
         font-size: 1em;
         padding-bottom: 5%;
+    }
+    .projects h3{
+        font-size: 1em;
+    }
+    .testimonials h3{
+        font-size: 1em;
     }
     
 }
