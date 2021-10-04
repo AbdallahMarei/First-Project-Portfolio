@@ -442,8 +442,12 @@ footer p{
          margin: 5%;
      }
      .qualifications .table{
+        grid-template-columns: 1fr;
          font-size: 1.3rem;
      }
+     .qualifications .table h3{
+        text-align: center;
+    }
      .services-container{
          flex-direction: column;
      }
