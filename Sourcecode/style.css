@@ -229,7 +229,7 @@ header{
 }
 .projects h2{
     text-align: center;
-    padding-top: 3%;
+    padding-top: 1em;
 }
 .projects h3{
     text-align: center;
@@ -251,7 +251,7 @@ header{
 }
 .testimonials h2{
     text-align: center;
-    padding-top: 3%;
+    padding-top: 1.5em;
 }
 .testimonials h3{
     text-align: center;
@@ -264,12 +264,12 @@ header{
     margin: 3%;
     gap: 2em;
     grid-template-columns: repeat(3,1fr);
-    padding-bottom: 5%;
+    padding-bottom: 2.5em;
     margin-bottom: 0;
 }
 .testimonials-container div{
     border: 1px solid #5C7AEA;
-    padding: 4%;
+    padding: 1em;
     border-radius: 10%; 
     transition: 0.5s;
 }
@@ -284,6 +284,9 @@ header{
     width: 100%;
     height: auto;
     max-width: 100px;
+}
+.testimonials #carouselExampleCaptions{
+    display: none;
 }
 
 
@@ -511,6 +514,17 @@ footer p{
         font-size: 1em;
         padding-bottom: 5%;
     }
+    .projects #carouselExampleFade{
+      height: 40vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .projects #carouselExampleFade .carousel-inner{
+        height: 80%;
+        display: flex;
+        align-items: center;
+    }
     .projects h3{
         font-size: 1em;
     }
@@ -520,5 +534,29 @@ footer p{
     .contactme h3{
         font-size: 0.8em;
     }
-    
+    .testimonials .testimonials-container{
+        display: none;
+    }
+    .testimonials #carouselExampleCaptions{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        padding: 5em 0;
+    }
+    .testimonials #carouselExampleCaptions img{
+        text-align: center;
+        margin: 0  auto;
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+        opacity: 0.7;
+    }
+    .testimonials #carouselExampleCaptions h5,p{
+        font-size: 1em;
+    }
+    .testimonials #carouselExampleCaptions h5{
+        font-weight: 700;
+    }
 }
