@@ -503,9 +503,13 @@ footer p{
     .description p{
         font-size: 1.1rem;
     }
+    .qualifications{
+        height: 100vh;
+    }
     .qualifications .table{
         grid-template-columns: 1fr;
-        font-size: 1rem;
+        font-size: 1.5em;
+        
     }
     .qualifications .table h3{
         text-align: center;
@@ -533,6 +537,9 @@ footer p{
     }
     .contactme h3{
         font-size: 0.8em;
+    }
+    .testimonials{
+        height: 70vh;
     }
     .testimonials .testimonials-container{
         display: none;
