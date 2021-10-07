@@ -235,6 +235,10 @@ header{
     text-align: center;
     margin: 2%;
 }
+.projects #carouselExampleFade img{
+width: 100%;
+height: auto;
+}
 
 
 
@@ -504,11 +508,11 @@ footer p{
         font-size: 1.1rem;
     }
     .qualifications{
-        height: 100vh;
+        height: 110vh;
     }
     .qualifications .table{
         grid-template-columns: 1fr;
-        font-size: 1.5em;
+        font-size: 1em;
         
     }
     .qualifications .table h3{
@@ -518,8 +522,11 @@ footer p{
         font-size: 1em;
         padding-bottom: 5%;
     }
+    .projects{
+        height: 100vh;
+    }
     .projects #carouselExampleFade{
-      height: 40vh;
+      height: 80%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -532,6 +539,9 @@ footer p{
     .projects h3{
         font-size: 1em;
     }
+    .projects #carouselExampleFade img{
+        height: 60vh;
+    }
     .testimonials h3{
         font-size: 1em;
     }
@@ -539,7 +549,7 @@ footer p{
         font-size: 0.8em;
     }
     .testimonials{
-        height: 70vh;
+        height: 100vh;
     }
     .testimonials .testimonials-container{
         display: none;
