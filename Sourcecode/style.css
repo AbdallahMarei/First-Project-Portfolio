@@ -67,7 +67,7 @@ header{
 }
 .navbar-links ul li a:hover{
     color: white;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .toggle-button{
@@ -280,6 +280,7 @@ height: auto;
 .testimonials-container div:hover{
     background-color: #007bff;
     border: 1px solid white;
+    transform: scale(0.9);
 }
 .testimonials-container div p{
     text-align: center;
@@ -507,9 +508,9 @@ footer p{
     .description p{
         font-size: 1.1rem;
     }
-    .qualifications{
-        height: 110vh;
-    }
+    /* .qualifications{
+        height: 80vh;
+    } */
     .qualifications .table{
         grid-template-columns: 1fr;
         font-size: 1em;
@@ -548,9 +549,9 @@ footer p{
     .contactme h3{
         font-size: 0.8em;
     }
-    .testimonials{
-        height: 100vh;
-    }
+    /* .testimonials{
+        height: 80vh;
+    } */
     .testimonials .testimonials-container{
         display: none;
     }
