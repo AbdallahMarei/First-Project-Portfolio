@@ -110,7 +110,7 @@ header{
     appearance: none;
     height: 30px;
     width: 50px;
-    background-color: #15181f;
+    background-color: #14279B;
     margin-top: 1%;
     position: absolute;
     right: 2%;
@@ -210,10 +210,12 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     
 }
 .home h1{
     font-family: 'Sacramento', cursive;
+    font-size:3.5em;
 }
 
 
@@ -527,6 +529,10 @@ footer p{
         padding: 0.2em;
     }
     .home{
+        text-align: center;
+    }
+    .home h1{
+        font-size: 2em;
         text-align: center;
     }
     .testimonials-container{
