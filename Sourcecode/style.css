@@ -106,6 +106,7 @@ header{
     height: 40px;
 }
 #toggle-darkmode{
+    -webkit-appearance: none;
     appearance: none;
     height: 30px;
     width: 50px;
