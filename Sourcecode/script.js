@@ -10,3 +10,6 @@ const darkMode = document.querySelector("#toggle-darkmode");
 darkMode.addEventListener("click", () => {
     document.getElementsByTagName("body")[0].classList.toggle("dark-theme");
 })
+
+
+

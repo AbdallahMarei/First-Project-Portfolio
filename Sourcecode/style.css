@@ -495,6 +495,9 @@ footer p{
     .toggle-button {
         display: flex;
     }
+    #toggle-darkmode{
+        margin-top: 1em;
+    }
     .navbar-links{
         display: none;
         width: 100%;
@@ -512,7 +515,7 @@ footer p{
     .navbar-links li{
         padding: 0.5rem;
     }
-    .navbar-links.active{
+    .active{
         display: flex;
     }
     .navbar{
