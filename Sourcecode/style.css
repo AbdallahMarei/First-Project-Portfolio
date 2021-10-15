@@ -133,14 +133,14 @@ header{
     color: white;
 }
 .dark-theme #toggle-darkmode{
-    background-color: #ffffff;
+    background-color: black;
 }
 .dark-theme #home-page{
     background:linear-gradient(to right, rgba(41, 45, 48, 0.836), rgba(50, 57, 63, 0.8)), url("homebackground.svg") center;
 }
 .dark-theme #toggle-darkmode::after{
     background-color: transparent;
-    box-shadow: 5px 5px #15181f;
+    box-shadow: 5px 5px #ffffff;
     left: 20px;
     top: -0.5px;
 }
