@@ -90,20 +90,129 @@ header{
 
 /* home */
 
-
-.home{
+#home-page{
     background:linear-gradient(to right, rgba(45, 145, 233, 0.8), rgba(39, 134, 218, 0.8)), url("homebackground.svg") center;
     height: 100vh;
     background-size: cover;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+/* darkmode */
+
+.dark-mode{
+    position: relative;
+    height: 40px;
+}
+#toggle-darkmode{
+    appearance: none;
+    height: 30px;
+    width: 50px;
+    background-color: #15181f;
+    margin-top: 1%;
+    position: absolute;
+    right: 2%;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+#toggle-darkmode::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+}
+.dark-theme .navbar{
+    background-color: black;
+    color: white;
+}
+.dark-theme #toggle-darkmode{
+    background-color: #ffffff;
+}
+.dark-theme #home-page{
+    background:linear-gradient(to right, rgba(41, 45, 48, 0.836), rgba(50, 57, 63, 0.8)), url("homebackground.svg") center;
+}
+.dark-theme #toggle-darkmode::after{
+    background-color: transparent;
+    box-shadow: 5px 5px #15181f;
+    left: 20px;
+    top: -0.5px;
+}
+.dark-theme #about-page{
+    background-color: rgba(21, 23, 24, 0.836);
+    color: white;
+}
+.dark-theme #about-page hr{
+    background-color: white;
+}
+.dark-theme #services-page{
+    background-color: rgba(41, 45, 48, 0.836);
+    color: white; 
+}
+.dark-theme hr{
+    background-color: black;
+}
+.dark-theme .btn{
+    background-color: black;
+    border: black;
+}
+
+.dark-theme .services-container{
+    margin-bottom: 0;
+}
+.dark-theme .services-container div:hover{
+    background-color: black;
+}
+.dark-theme #qualificatoins-page{
+    background: rgba(21, 23, 24, 0.836);
+
+}
+.dark-theme #projects-page{
+    background-color: rgba(41, 45, 48, 0.836);
+    color: white; 
+}
+.dark-theme #testimonials-page{
+    background: rgba(21, 23, 24, 0.836);
+}
+.dark-theme .testimonials-container div{
+    border: rgba(21, 23, 24, 0.836);
+}
+.dark-theme .testimonials-container div:hover{
+    background-color: black;
+    border: black;
+}
+.dark-theme #contactme-page{
+    background-color: rgba(41, 45, 48, 0.836);
+    color: white;
+}
+.dark-theme footer{
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+.home{
     display: flex;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    
 }
 .home h1{
-    font-family: 'Sacramento', cursive;;
+    font-family: 'Sacramento', cursive;
 }
 
 
@@ -146,6 +255,7 @@ header{
 
 .services{
     margin: 0;
+    padding: 2em;
 }
 .services-container{
     display: flex;
@@ -154,6 +264,7 @@ header{
     align-items: center;
     margin: 0 auto;
     margin-bottom: 3em;
+    
 }
 .services-container i{
     font-size: 6em; 
@@ -166,7 +277,7 @@ header{
     align-items: center;
     padding: 1em;
     height: 100%;
-    margin: 0.5em;
+    margin: 1.5em;
     border-radius: 1em;
     transition: ease-in-out 0.3s;
 }
@@ -445,6 +556,7 @@ footer p{
          text-align: center;
          font-size: 0.8em;
          margin-bottom: 5%;
+         margin-left: 0;
      }
      .description p{
          margin: 5%;
@@ -458,6 +570,9 @@ footer p{
     }
      .services-container{
          flex-direction: column;
+     }
+     #services-page{
+         padding: 0.5em;
      }
      .contactme h3{
          font-size: 0.9em;
