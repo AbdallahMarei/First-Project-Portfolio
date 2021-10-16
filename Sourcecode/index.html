@@ -8,6 +8,7 @@
     <meta name="keywords" content="HTML5, CSS3, Bootstrap v4.6">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     
     <title>Abdallah Marei's Portfolio</title>
@@ -46,6 +47,7 @@
         <div class="home" >
             <h1>Welcome to Abdallah Marei's Portfolio</h1>
             <p>A Full Stack Web Developer At Your Service</p>
+            <a href="#contactme-page"><button type="button" class="btn btn-light"><strong>Hire Me</strong></button></a>
         </div>
     </section>
 
@@ -56,7 +58,7 @@
         <div class="description">
           <p>My name is Abdallah Marei and I am a full stack web developer. I graduated from the University of Jordan as a Mechanical Engineer but I realized quickly that it was not for me, that is why I decided to follow my passion and start my career as a developer. Changing my career was the best decision in my life because now work is no longer work it is fun.</p>
           <p>Feel free to contact me if you have any work you think I am suited for. I am looking forward to working with you.</p>
-          <a href="#contactme-page"><button type="button" class="btn btn-primary"><strong>Hire Me</strong></button></a>
+          <a href="resume.pdf" download=""><button type="button" class="btn btn-primary"><strong>Download My CV</strong></button></a>
         </div>
         <div class="profile-picture">
           <img src="images/abdallah.png" alt="A picture of Abdallah Marei">
@@ -68,17 +70,17 @@
         <h2><strong>Services</strong></h2>
         <hr>
         <div class="services-container">
-           <div class="first-service">
+           <div data-aos="fade-up" data-aos-duration="2000" class="first-service">
             <i class="fas fa-desktop"></i>
             <h3><strong>Web development</strong></h3>
             <p>My skills in web development are versatile, I am an expert in Html5, CSS3, Javascript, PHP and React. In the future I am sure I will have more at my disposal.</p>
            </div>
-           <div class="second-service">
+           <div data-aos="fade-up" data-aos-duration="2000" class="second-service">
             <i class="fas fa-mobile-alt"></i>
             <h3><strong>Mobile App development</strong></h3>
             <p>Building Mobile applications is a necessity at this day and age, that is why I have learned Flutter and Swift to build IOS and Android applications for my clients.</p>
            </div>
-           <div class="third-container">
+           <div data-aos="fade-up" data-aos-duration="2000" class="third-container">
             <i class="fas fa-chalkboard-teacher"></i>
             <h3><strong>Programming Teacher</strong></h3>
             <p>In my spare time I like to teach Programming for other people because I think it is wrong not share ones knowledge with others. Which is why I regularly teach others.</p>
@@ -124,7 +126,9 @@
         <h2><strong>Projects</strong></h2>
         <hr>
         <h3><strong>A list of projects done by me</strong></h3>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" style="width: 80%; margin: 0 auto;">
+        <div data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" style="width: 80%; margin: 0 auto;">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <a href="sealine/sealine.html"><img src="images/project1.PNG" class="d-block" alt="A picture of my first project"></a>
@@ -177,7 +181,7 @@
               <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
               <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
+            <div  class="carousel-inner">
               <div class="carousel-item active">
                 <img src="images/ghassan.png" class="d-block w-100" alt="A picture of Ghassan dabak">
                 <div class="carousel-caption d-md-block">
@@ -270,6 +274,10 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     <script src="script.js"></script>
 </body>
 </html>
