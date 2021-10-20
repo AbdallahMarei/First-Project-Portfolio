@@ -64,6 +64,7 @@ header{
     padding: 0.5em;
     display: block;
     font-weight: 800;
+    transition: 0.3s;
 }
 .navbar-links ul li a:hover{
     color: white;
@@ -468,6 +469,9 @@ footer{
     padding: 1em;
     
 }
+.navbar-links-footer ul li{
+    transition: 0.5s;
+}
 .navbar-links-footer ul li:hover{
     
     transform: scale(1.2);
@@ -482,6 +486,9 @@ footer .icons a{
     text-decoration: none;
     color: rgb(224, 224, 224);
     padding: 0.8em;
+}
+footer .icons a i{
+    transition: 0.5s;
 }
 footer .icons a:hover i{
     color: whitesmoke;
