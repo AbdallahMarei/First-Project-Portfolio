@@ -468,9 +468,12 @@ footer{
     padding: 1em;
     
 }
+.navbar-links-footer ul li:hover{
+    
+    transform: scale(1.2);
+}
 .navbar-links-footer ul li a:hover{
     color: white;
-    transform: scale(1.2);
 }
 footer .icons{
     text-align: center;
