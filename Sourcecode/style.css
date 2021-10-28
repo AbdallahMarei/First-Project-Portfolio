@@ -173,7 +173,10 @@ header{
 }
 .dark-theme #qualifications-page{
     background: rgba(21, 23, 24, 0.836);
-
+    color: white;
+}
+.dark-theme .qualifications .table{
+    color: white;
 }
 .dark-theme #projects-page{
     background-color: rgba(41, 45, 48, 0.836);
@@ -181,6 +184,7 @@ header{
 }
 .dark-theme #testimonials-page{
     background: rgba(21, 23, 24, 0.836);
+    color: white;
 }
 .dark-theme .testimonials-container div{
     border: rgba(21, 23, 24, 0.836);
@@ -317,22 +321,22 @@ header{
 /* qualifications */
 
 .qualifications{
-    color: white;
-    background: url("images/blue-back.png") center;
+    color: black;
+    /* background: url("images/blue-back.png") center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #DBE6FD;
 }
 .qualifications h2{
     text-align: center;
     padding-top: 3%;
-    color: white;
 }
 .qualifications hr{
-    background: rgb(255, 255, 255);
+    /* background: rgb(255, 255, 255); */
     margin-bottom: 4%;
 }
 .qualifications .table{
-    color: white;
+    
     display: grid;
     grid-template-columns: repeat(2,1fr);
     width: 80%;
@@ -367,13 +371,13 @@ height: auto;
 /* testimonials */
 
 .testimonials{
-    background-color: #1c4bf5;
-    color: white;
+    background-color: #e4e9fc;
+    color: black;
     text-align: center;
 }
-.testimonials hr{
+/* .testimonials hr{
     background-color: white;
-}
+} */
 .testimonials h2{
     text-align: center;
     padding-top: 1.5em;
@@ -393,14 +397,14 @@ height: auto;
     margin-bottom: 0;
 }
 .testimonials-container div{
-    border: 1px solid #1c4bf5;
+    border: 1px solid #e4e9fc;
     padding: 1em;
     border-radius: 10%; 
     transition: 0.5s;
 }
 .testimonials-container div:hover{
-    background-color: #007bff;
-    border: 1px solid white;
+    background-color: #c3c7d3;
+    border: 1px solid #e4e9fc;
     transform: scale(0.9);
 }
 .testimonials-container div p{
@@ -571,8 +575,7 @@ footer p{
     flex-direction: column;
     text-align: center;
      }
-     .navbar-links-footer ul li a{
-     }
+     
      .about-container{
          flex-direction: column-reverse;
      }

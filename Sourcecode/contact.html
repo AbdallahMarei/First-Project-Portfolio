@@ -10,13 +10,89 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
-    
+
     <title>Contact Me</title>
 </head>
 <body>
-    
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#home-page"><img src="images/logo1.png" alt="A picture of the logo for the website"></a>
+        </div>
+        <div class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="skills.html">Qualifications</a></li>
+                <li><a href="skills.html">Projects</a></li>
+                <li><a href="index.html">Testimonials</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
+<main>
+    <section class="contactme" id="contactme-page">
+        <div class="dark-mode">
+            <input type="checkbox" class="checkbox-darkmode" id="toggle-darkmode">
+   
+         </div>
+        <h2 data-aos="fade-up" data-aos-duration="2000"><strong>Contact Me</strong></h2>
+        <hr data-aos="fade-up" data-aos-duration="2000">
+        <h3 data-aos="fade-up" data-aos-duration="2000"><strong>Have me make stuff for you. If you like my work and have some cool projects to work on, just send me a direct message or contact me through social sites.</strong></h3>
+        <div class="contactme-container">
+            <form data-aos="fade-up" data-aos-duration="2000" action="mailto:abdullahmari@gmail.com" enctype="text/plain" id="contact-form">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Name</label>
+                    <input type="text" class="form-control name-input" id="exampleFormControlInput1" placeholder="Enter Your Name" required>
+                  </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email address</label>
+                  <input type="email" class="form-control email-input" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Your Message</label>
+                  <textarea class="form-control text-input" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary"><strong>Submit</strong></button>
+              </form>
+            <div class="contact-info">
+              <p data-aos="fade-up" data-aos-duration="2000">Contact Information</p>
+              <p data-aos="fade-up" data-aos-duration="2000">Abdallah Marei</p>
+              <br>
+              <p data-aos="fade-up" data-aos-duration="2000"><i class="fas fa-map-marker-alt"></i> Amman, Jordan</p>
+              <p data-aos="fade-up" data-aos-duration="2000"><i class="fas fa-phone"></i> +(962)798861423/+(962)777685230</p>
+              <p data-aos="fade-up" data-aos-duration="2000"><i class="fas fa-envelope"></i> abdullahmari@gmail.com</p>
 
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="navbar-links-footer">
+       <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="index.html">About</a></li>
+           <li><a href="index.html">Services</a></li>
+           <li><a href="skills.html">Qualifications</a></li>
+           <li><a href="skills.html">Projects</a></li>
+           <li><a href="index.html">Testimonials</a></li>
+       </ul>
+    </div>
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/abdallah-marei/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+       <a href="https://github.com/AbdallahMarei" target="_blank"><i class="fab fa-github"></i></a>
+       <a href="https://www.facebook.com/abdullah.mari" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <p>&copy Copyright 2021. Made by Abdallah Marei</p>
+</footer>
 
 
 
@@ -26,6 +102,6 @@
   <script>
     AOS.init();
   </script>
-    <script src="script.js"></script>
+    <script src="contactscript.js"></script>
 </body>
 </html>
